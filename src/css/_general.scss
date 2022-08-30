@@ -1,0 +1,105 @@
+/*********************************************
+ * Author:            Tiago Galvão           *
+ * Author URI:        https://deviago.me     *
+ * Year:              2022                   *
+ * - This file has a mobile-first approach - *
+ *********************************************/
+
+/*#####################
+// CONTAINERS
+#######################*/
+
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: 2vw;
+  margin-right: 2vw;
+
+  @include mq(custom-big-desktop) {
+    margin-left: 20vw;
+    margin-right: 20vw;
+  }
+
+  @include mq(big-desktop) {
+    margin-left: 20vw;
+    margin-right: 20vw;
+  }
+
+}
+
+/*#####################
+// GENERAL
+#######################*/
+
+body{
+  font-family: $regular-font;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: $primary;
+    text-align: center;
+}
+
+.text-center{
+  text-align: center;
+}
+
+margin
+
+/*#####################
+// ANIMATIONS
+#######################*/
+
+.pulsate {
+  -webkit-animation: pulsate 2s linear infinite both;
+  animation: pulsate 2s linear infinite both;
+}
+
+.pulsate-slow {
+  -webkit-animation: pulsate 5s ease-in-out infinite both;
+  animation: pulsate 5s ease-in-out infinite both;
+}
+
+
+
+@-webkit-keyframes pulsate {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+
+  50% {
+    -webkit-transform: scale(1.015);
+    transform: scale(1.015);
+  }
+
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+@keyframes pulsate {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+
+  50% {
+    -webkit-transform: scale(1.015);
+    transform: scale(1.015);
+  }
+
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}

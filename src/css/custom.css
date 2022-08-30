@@ -1,0 +1,427 @@
+@charset "UTF-8";
+/*********************************************
+ * Author:            Tiago Galvão           *
+ * Author URI:        https://deviago.me     *
+ * Year:              2022                   *
+ * - This file has a mobile-first approach - *
+ *********************************************/
+/*********************************************
+ * Author:            Tiago Galvão           *
+ * Author URI:        https://deviago.me     *
+ * Year:              2022                   *
+ * - This file has a mobile-first approach - *
+ *********************************************/
+/*********************************************
+ * Author:            Tiago Galvão           *
+ * Author URI:        https://deviago.me     *
+ * Year:              2022                   *
+ * - This file has a mobile-first approach - *
+ *********************************************/
+/*#####################
+// CONTAINERS
+#######################*/
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: 2vw;
+  margin-right: 2vw;
+}
+@media only screen and (min-width: 89.3125em) and (max-width: 112.5em) {
+  .container {
+    margin-left: 20vw;
+    margin-right: 20vw;
+  }
+}
+@media only screen and (min-width: 112.5em) {
+  .container {
+    margin-left: 20vw;
+    margin-right: 20vw;
+  }
+}
+
+/*#####################
+// GENERAL
+#######################*/
+body {
+  font-family: "Secular One", sans-serif !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #663399;
+  text-align: center;
+}
+
+.text-center {
+  text-align: center;
+}
+
+margin .pulsate {
+  -webkit-animation: pulsate 2s linear infinite both;
+  animation: pulsate 2s linear infinite both;
+}
+
+.pulsate-slow {
+  -webkit-animation: pulsate 5s ease-in-out infinite both;
+  animation: pulsate 5s ease-in-out infinite both;
+}
+
+@-webkit-keyframes pulsate {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.015);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes pulsate {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.015);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+/*#####################
+// TITLE
+#######################*/
+.title {
+  margin: 2em;
+}
+
+/*#####################
+// END TITLE
+#######################*/
+/*#####################
+// CLEAR BUTTON
+#######################*/
+.clear-button {
+  align-self: flex-start;
+  width: 80px;
+  margin-left: 2em;
+  font-family: "Secular One", sans-serif !important;
+  background-color: transparent;
+  border: none;
+  outline: 3px solid #663399;
+  padding: 0.3em !important;
+}
+.clear-button:hover, .clear-button:focus-visible {
+  background-color: rgba(102, 51, 153, 0.1725490196);
+}
+
+/*#####################
+// END CLEAR BUTTON
+#######################*/
+/*#####################
+// TEXT AREA
+#######################*/
+textarea {
+  width: 100%;
+  height: 450px;
+  resize: none;
+  padding: 2em;
+  padding-top: 3em;
+  box-sizing: border-box;
+  border: 3px solid #663399;
+  box-shadow: 5px 5px #f5f5f5;
+}
+@media only screen and (max-width: 24.375em) {
+  textarea {
+    height: 200px;
+    padding-top: 1.5em;
+  }
+}
+@media only screen and (min-width: 89.3125em) and (max-width: 112.5em) {
+  textarea {
+    height: 300px;
+    padding-top: 3em;
+  }
+}
+@media only screen and (min-width: 112.5em) {
+  textarea {
+    height: 300px;
+    padding-top: 3em;
+  }
+}
+textarea::-moz-placeholder {
+  font-family: "Secular One", sans-serif !important;
+  color: #663399;
+  font-weight: bold;
+  font-size: 1.5em;
+  text-align: center;
+  padding-top: 7em;
+  text-shadow: 2px 2px rgba(255, 127, 80, 0.2549019608);
+}
+textarea:-ms-input-placeholder {
+  font-family: "Secular One", sans-serif !important;
+  color: #663399;
+  font-weight: bold;
+  font-size: 1.5em;
+  text-align: center;
+  padding-top: 7em;
+  text-shadow: 2px 2px rgba(255, 127, 80, 0.2549019608);
+}
+textarea::placeholder {
+  font-family: "Secular One", sans-serif !important;
+  color: #663399;
+  font-weight: bold;
+  font-size: 1.5em;
+  text-align: center;
+  padding-top: 7em;
+  text-shadow: 2px 2px rgba(255, 127, 80, 0.2549019608);
+}
+@media only screen and (max-width: 24.375em) {
+  textarea::-moz-placeholder {
+    padding-top: 2.5em;
+  }
+  textarea:-ms-input-placeholder {
+    padding-top: 2.5em;
+  }
+  textarea::placeholder {
+    padding-top: 2.5em;
+  }
+}
+@media only screen and (min-width: 89.3125em) and (max-width: 112.5em) {
+  textarea::-moz-placeholder {
+    padding-top: 4.5em;
+  }
+  textarea:-ms-input-placeholder {
+    padding-top: 4.5em;
+  }
+  textarea::placeholder {
+    padding-top: 4.5em;
+  }
+}
+@media only screen and (min-width: 112.5em) {
+  textarea::-moz-placeholder {
+    padding-top: 4.5em;
+  }
+  textarea:-ms-input-placeholder {
+    padding-top: 4.5em;
+  }
+  textarea::placeholder {
+    padding-top: 4.5em;
+  }
+}
+textarea:focus::-moz-placeholder {
+  color: #808080;
+  font-weight: light;
+  font-size: 0.8em;
+  text-align: center;
+  padding-top: 15em;
+  text-shadow: none;
+}
+textarea:focus:-ms-input-placeholder {
+  color: #808080;
+  font-weight: light;
+  font-size: 0.8em;
+  text-align: center;
+  padding-top: 15em;
+  text-shadow: none;
+}
+textarea:focus::placeholder {
+  color: #808080;
+  font-weight: light;
+  font-size: 0.8em;
+  text-align: center;
+  padding-top: 15em;
+  text-shadow: none;
+}
+@media only screen and (max-width: 24.375em) {
+  textarea:focus::-moz-placeholder {
+    padding-top: 6em;
+  }
+  textarea:focus:-ms-input-placeholder {
+    padding-top: 6em;
+  }
+  textarea:focus::placeholder {
+    padding-top: 6em;
+  }
+}
+@media only screen and (min-width: 89.3125em) and (max-width: 112.5em) {
+  textarea:focus::-moz-placeholder {
+    padding-top: 10em;
+  }
+  textarea:focus:-ms-input-placeholder {
+    padding-top: 10em;
+  }
+  textarea:focus::placeholder {
+    padding-top: 10em;
+  }
+}
+@media only screen and (min-width: 112.5em) {
+  textarea:focus::-moz-placeholder {
+    padding-top: 10em;
+  }
+  textarea:focus:-ms-input-placeholder {
+    padding-top: 10em;
+  }
+  textarea:focus::placeholder {
+    padding-top: 10em;
+  }
+}
+
+/*#####################
+// END TEXT AREA
+#######################*/
+/*#####################
+// CONVERT BUTTON
+#######################*/
+button:not(.clipboard-button, .reset-button, .clear-button) {
+  font-family: "Secular One", sans-serif !important;
+  font-size: 1em;
+  width: 100%;
+  border: none;
+  background-color: #663399;
+  box-shadow: 5px 5px #f5f5f5;
+  color: #FFF;
+  padding: 2em;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+button:not(.clipboard-button, .reset-button, .clear-button):hover, button:not(.clipboard-button, .reset-button, .clear-button):focus-visible {
+  background-color: #ff7f50;
+  color: #000;
+  font-weight: bold;
+  box-shadow: 5px 5px #f5f5f5;
+}
+
+/*#####################
+// END CONVERT BUTTON
+#######################*/
+/*#####################
+// CODE
+#######################*/
+pre {
+  margin: 2em 0 2em 0;
+  border: 3px solid #663399;
+}
+@media only screen and (max-width: 24.375em) {
+  pre {
+    margin: 2em 0 0 0;
+  }
+}
+@media only screen and (min-width: 89.3125em) and (max-width: 112.5em) {
+  pre {
+    margin: 2em 0 2em 0;
+  }
+}
+@media only screen and (min-width: 112.5em) {
+  pre {
+    margin: 2em 0 2em 0;
+  }
+}
+
+/*#####################
+// END CODE
+#######################*/
+/*#####################
+// ERROR MESSAGES
+#######################*/
+.error-message,
+.success-message {
+  width: 100%;
+  font-size: 1em;
+  color: #FFF;
+  box-shadow: 5px 5px #f5f5f5;
+}
+.error-message p,
+.success-message p {
+  padding: 0.5em;
+}
+
+.error-message {
+  background-color: #e24c4c;
+}
+
+.success-message {
+  background-color: #75edad;
+}
+.success-message .message-wrapper {
+  padding: 1em;
+}
+
+/*#####################
+// END ERROR MESSAGES
+#######################*/
+/*#####################
+// ACTION BUTTONS
+#######################*/
+.action-buttons {
+  width: 100%;
+}
+.action-buttons button {
+  display: inline-block;
+  margin-right: 2em;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  font-family: "Secular One", sans-serif !important;
+  padding: 0.5rem;
+  border: 3px solid #663399;
+  background-color: transparent;
+}
+.action-buttons button:focus-visible, .action-buttons button:active {
+  border: 3px solid #75edad;
+  color: #000;
+  font-weight: bold;
+}
+.action-buttons button:hover {
+  box-shadow: 5px 5px #f5f5f5;
+  background-color: rgba(102, 51, 153, 0.1725490196);
+}
+
+/*#####################
+// END ACTION BUTTONS
+#######################*/
+/*#####################
+// FOOTER
+#######################*/
+footer {
+  display: flex;
+  bottom: 0;
+  justify-content: center;
+  align-items: center;
+  background-color: #ff7f50;
+  width: 100%;
+  box-shadow: 5px 5px #f5f5f5;
+}
+@media only screen and (max-width: 24.375em) {
+  footer {
+    position: static;
+    margin-top: 2em;
+    margin-bottom: 0em;
+  }
+}
+@media only screen and (min-width: 89.3125em) and (max-width: 112.5em) {
+  footer {
+    position: static;
+    margin-bottom: 2em;
+  }
+}
+@media only screen and (min-width: 112.5em) {
+  footer {
+    position: static;
+    margin-bottom: 2em;
+  }
+}
+footer .footer-logo {
+  vertical-align: middle;
+  width: auto;
+  height: 15px;
+}
+
+/*#####################
+// END FOOTER
+#######################*//*# sourceMappingURL=custom.css.map */

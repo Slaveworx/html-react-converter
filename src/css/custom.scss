@@ -1,0 +1,301 @@
+/*********************************************
+ * Author:            Tiago Galvão           *
+ * Author URI:        https://deviago.me     *
+ * Year:              2022                   *
+ * - This file has a mobile-first approach - *
+ *********************************************/
+
+//UTILITIES IMPORT
+@import 'base';
+
+/*#####################
+// TITLE
+#######################*/
+
+.title {
+    margin: 2em;
+}
+
+/*#####################
+// END TITLE
+#######################*/
+
+/*#####################
+// CLEAR BUTTON
+#######################*/
+
+.clear-button {
+    align-self: flex-start;
+    width: 80px;
+    margin-left: 2em;
+    font-family: $regular-font;
+    background-color: transparent;
+    border: none;
+    outline: 3px solid $primary;
+    padding: 0.3em !important;
+
+    &:hover,
+    &:focus-visible {
+        background-color: $primary-light;
+    }
+}
+
+
+/*#####################
+// END CLEAR BUTTON
+#######################*/
+
+/*#####################
+// TEXT AREA
+#######################*/
+textarea {
+
+    width: 100%;
+    height: 450px;
+    resize: none;
+    padding: 2em;
+    padding-top: 3em;
+    box-sizing: border-box;
+    border: 3px solid $primary;
+    box-shadow: 5px 5px $whitesmoke;
+
+    @include mq(extra-small) {
+        height: 200px;
+        padding-top: 1.5em;
+    }
+
+    @include mq(custom-big-desktop) {
+        height: 300px;
+        padding-top: 3em;
+    }
+
+    @include mq(big-desktop) {
+        height: 300px;
+        padding-top: 3em;
+    }
+
+
+
+    &::placeholder {
+
+        font-family: $regular-font;
+        color: $primary;
+        font-weight: bold;
+        font-size: 1.5em;
+        text-align: center;
+        padding-top: 7em;
+        text-shadow: 2px 2px $text-shadow;
+
+        @include mq(extra-small) {
+            padding-top: 2.5em;
+        }
+
+
+        @include mq(custom-big-desktop) {
+            padding-top: 4.5em;
+        }
+
+        @include mq(big-desktop) {
+            padding-top: 4.5em;
+        }
+
+    }
+
+    &:focus::placeholder {
+        color: $gray;
+        font-weight: light;
+        font-size: 0.8em;
+        text-align: center;
+        padding-top: 15em;
+        text-shadow: none;
+
+        @include mq(extra-small) {
+            padding-top: 6em;
+        }
+
+        @include mq(custom-big-desktop) {
+            padding-top: 10em;
+        }
+
+        @include mq(big-desktop) {
+            padding-top: 10em;
+        }
+    }
+}
+
+/*#####################
+// END TEXT AREA
+#######################*/
+
+/*#####################
+// CONVERT BUTTON
+#######################*/
+
+button:not(.clipboard-button, .reset-button, .clear-button) {
+    font-family: $regular-font;
+    font-size: 1em;
+    width: 100%;
+    border: none;
+    background-color: $primary;
+    box-shadow: 5px 5px $whitesmoke;
+    color: $white;
+    padding: 2em;
+    margin-top: 2em;
+    margin-bottom: 2em;
+
+    &:hover,
+    &:focus-visible {
+        background-color: $secondary;
+        color: $black;
+        font-weight: bold;
+        box-shadow: 5px 5px $whitesmoke;
+    }
+
+}
+
+/*#####################
+// END CONVERT BUTTON
+#######################*/
+
+/*#####################
+// CODE
+#######################*/
+
+pre {
+    margin: 2em 0 2em 0;
+    border: 3px solid $primary;
+
+    @include mq(extra-small) {
+        margin: 2em 0 0 0;
+    }
+
+    @include mq(custom-big-desktop) {
+        margin: 2em 0 2em 0;
+    }
+
+    @include mq(big-desktop) {
+        margin: 2em 0 2em 0;
+    }
+}
+
+/*#####################
+// END CODE
+#######################*/
+
+/*#####################
+// ERROR MESSAGES
+#######################*/
+
+.error-message,
+.success-message {
+
+    width: 100%;
+    font-size: 1em;
+    color: $white;
+    box-shadow: 5px 5px $whitesmoke;
+
+    p {
+        padding: 0.5em;
+    }
+
+}
+
+.error-message {
+    background-color: $error;
+}
+
+.success-message {
+    background-color: $success;
+
+    .message-wrapper {
+        padding: 1em;
+    }
+}
+
+
+
+/*#####################
+// END ERROR MESSAGES
+#######################*/
+
+/*#####################
+// ACTION BUTTONS
+#######################*/
+
+.action-buttons {
+    width: 100%;
+
+    button {
+        display: inline-block;
+        margin-right: 2em;
+        margin-top: 2em;
+        margin-bottom: 2em;
+        font-family: $regular-font;
+        padding: 0.5rem;
+        border: 3px solid $primary;
+        background-color: transparent;
+
+
+        &:focus-visible,
+        &:active {
+            border: 3px solid $success;
+            color: $black;
+            font-weight: bold;
+        }
+
+        &:hover {
+            box-shadow: 5px 5px $whitesmoke;
+            background-color: $primary-light;
+        }
+    }
+}
+
+/*#####################
+// END ACTION BUTTONS
+#######################*/
+
+/*#####################
+// FOOTER
+#######################*/
+
+footer {
+
+    display: flex;
+    bottom: 0;
+    justify-content: center;
+    align-items: center;
+    background-color: $secondary;
+    width: 100%;
+    box-shadow: 5px 5px $whitesmoke;
+
+    @include mq(extra-small) {
+        position: static;
+        margin-top: 2em;
+        margin-bottom: 0em;
+    }
+
+    @include mq(custom-big-desktop) {
+        position: static;
+        margin-bottom: 2em;
+    }
+
+    @include mq(big-desktop) {
+        position: static;
+        margin-bottom: 2em;
+    }
+
+
+    .footer-logo {
+        vertical-align: middle;
+        width: auto;
+        height: 15px;
+    }
+
+
+
+
+}
+
+/*#####################
+// END FOOTER
+#######################*/
